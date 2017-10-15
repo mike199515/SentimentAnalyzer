@@ -10,6 +10,8 @@ A deep learning project on sentiment analysis using stanford's sentiment bank.
 
 with anaconda recommended as python library & version control
 
+After correct setup, you should pass tests. Use test_keras_mnist_mlp.py test_pytreebank.py to check if your requirement is met.
+
 ## Tutorial and tools
 
 For windows installation, we have
