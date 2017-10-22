@@ -7,7 +7,7 @@ def main():
         pytreebank.load_sst("./data/")
     except:
         pass # pytreebank downloader seems not robust under windows env. Actually we just want the data and the parser, so ignored.
-    train_data = pytreebank.import_tree_corpus("./data/stanford_sentiment_treebank/trees/train.txt")
+    train_data = pytreebank.import_tree_corpus("./data/trees/train.txt")
     assert(str(train_data[0])==TARGET_STRING),"test fail for pytreebank."
     print("Correctness verified.")
 

@@ -27,6 +27,8 @@ You need to make sure Requirements are installed beforehand.
 
 run "pip install -e SentimentAnalyzer"(preferrable in anaconda environment) to install it in developer mode, then you can import analyzer.* in python from anywhere and change source code as you wish. 
 
+Run scripts/initialize.py to get training data and preprocessed models ready. GloVe training is slow(hours of train time), so you should run create_pretrain_model.py instead.
+
 ## Tutorial and tools
 
 For windows installation, we have
