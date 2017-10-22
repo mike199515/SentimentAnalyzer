@@ -1,5 +1,6 @@
 import gensim
 import numpy as np
+from definitions import verify_cwd
 class Word2Vec(object):
     def __init__(self, model_name = None):
         if model_name is None: model_name = "./data/word2vec.model"
@@ -14,6 +15,7 @@ class Word2Vec(object):
 
 
 if __name__=="__main__":
+    verify_cwd()
     sentence = ["hello","world"]
     w2v = Word2Vec()
     print(w2v.vectorize_sentence(sentence))

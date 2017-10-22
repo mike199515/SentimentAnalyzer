@@ -4,10 +4,11 @@ import urllib.request
 import zipfile
 import pytreebank
 import time
+from definitions import verify_cwd
 from scripts.create_pretrain_model import train_word2vec, train_glove
+
 def main():
-    print("make sure this is run under root!")
-    time.sleep(5) # give you time to prepare lol
+    verify_cwd()
     if not os.path.exists("./data/"):
         print("creating folder...")
         os.mkdir("./data/")
