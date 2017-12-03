@@ -34,8 +34,9 @@ def train_glove(sentences = None, nr_feature = None, save_name = None):
     corpus.fit(sentences, window = 10)
     gl = glove.Glove(no_components=nr_feature, learning_rate=0.05)
     print("start training glove...")
-    gl.fit(corpus.matrix, epochs=30, no_threads= multiprocessing.cpu_count() , verbose=True)
-    corpus.save("./data/glove.model")
+    gl.fit(corpus.matrix, epochs=10, no_threads= multiprocessing.cpu_count() , verbose=True)
+    corpus.save("./data/corpus.model")
+    gl.save("./data/glove.model")
 
 
 if __name__=="__main__":
